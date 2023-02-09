@@ -8,7 +8,7 @@ class ValueCountingDB:
     ##
     ## For simplicity, we `delete` keys by setting them to `None`. This
     ## enables a deleted key in this transaction to shadow any previous values
-    ## they key may have in earlier transactions.
+    ## the key may have in earlier transactions.
     def __init__(self):
         self.db = {}
         self.counter = defaultdict(int)
